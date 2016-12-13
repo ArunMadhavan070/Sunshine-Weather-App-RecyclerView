@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_books"
+    style="@style/AppTheme.Card.Margins"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/image_background"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginLeft="@dimen/margin_large"
+           />
+
+        <!--<LinearLayout
+            android:id="@+id/layout_partner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_normal">-->
+
+            <LinearLayout
+                android:id="@+id/layout_partner1"
+                android:layout_width="wrap_content"
+                android:layout_height="102dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_normal"
+                android:layout_marginLeft="@dimen/margin_medium">
+
+
+            <TextView
+                android:id="@+id/text_weather_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium"
+
+
+                android:paddingBottom="@dimen/margin_normal"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large"
+                android:paddingTop="@dimen/margin_large"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif_condensed"
+                />
+
+
+            <TextView
+                android:id="@+id/text_weather_description"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:maxLines="2"
+                android:paddingBottom="@dimen/margin_normal"
+                android:paddingLeft="@dimen/margin_large"
+                android:paddingRight="@dimen/margin_large"
+                android:paddingTop="@dimen/margin_small"
+                android:textSize="@dimen/text_size_normal"
+                android:fontFamily="sans-serif-light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_partner2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_normal">
+
+            <TextView
+                android:id="@+id/text_weather_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_xlarge"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="italic"
+                android:layout_gravity="end" />
+
+            <TextView
+                android:id="@+id/text_weather_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_large"
+
+                android:textSize="@dimen/text_size_normal"
+                android:textStyle="italic"
+                android:layout_gravity="end" />
+
+            </LinearLayout>
+
+
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</android.support.v7.widget.CardView>
